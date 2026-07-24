@@ -1,24 +1,179 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The second missionary journey</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>The second missionary journey</h1>
-    <h2>AHW - Ministry</h2>
-    <img src="./AHW.jpeg" alt="" />
-  </body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHW - Ministry | Connect & Prayer Portal</title>
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts: Cairo (Arabic) & Outfit (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Main Container -->
+  <div class="app-wrapper">
+    
+    <!-- Top Header Bar -->
+    <header class="top-header">
+      <div class="header-content">
+        <div class="brand-mini">
+          <img src="./AHW.jpeg" alt="AHW Ministry Logo" class="mini-logo" />
+          <span class="mini-title">AHW - Ministry</span>
+        </div>
+        
+        <!-- Language Switcher Button -->
+        <button id="langToggleBtn" class="lang-btn" aria-label="Switch Language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langBtnText">العربية</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+      
+      <!-- Hero Ministry Section -->
+      <section class="hero-section">
+        <div class="logo-container">
+          <div class="logo-ring"></div>
+          <img src="./AHW.jpeg" alt="AHW - Ministry Emblem" class="hero-logo" />
+        </div>
+
+        <h1 class="ministry-title" id="ministryTitle">AHW - Ministry</h1>
+        <p class="ministry-tagline" id="ministryTagline">Connecting Hearts through Faith, Fellowship & Prayer</p>
+        
+        <div class="badge-pill">
+          <i class="fa-solid fa-heart"></i>
+          <span id="welcomeBadge">Welcome to Our Official Social Hub</span>
+        </div>
+      </section>
+
+      <!-- Social Media Links Section -->
+      <section class="social-section">
+        <h2 class="section-heading" id="socialHeading">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>Our Official Channels</span>
+        </h2>
+        <p class="section-subtext" id="socialSubtext">Follow, subscribe, and stay updated with our latest spiritual content and announcements.</p>
+
+        <div class="social-grid">
+          
+          <!-- Facebook Card -->
+          <a href="https://www.facebook.com/profile.php?id=61576910051160" target="_blank" rel="noopener noreferrer" class="social-card facebook-card">
+            <div class="card-glass-bg"></div>
+            <div class="card-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Facebook</h3>
+              <p class="card-desc" id="fbDesc">Join our Facebook community for daily posts & live streams.</p>
+            </div>
+            <div class="card-action">
+              <span class="btn-text" id="fbBtn">Follow Page</span>
+              <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
+            </div>
+          </a>
+
+          <!-- YouTube Card -->
+          <a href="https://www.youtube.com/@SihamBiedjabaar" target="_blank" rel="noopener noreferrer" class="social-card youtube-card">
+            <div class="card-glass-bg"></div>
+            <div class="card-icon">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">YouTube</h3>
+              <p class="card-desc" id="ytDesc">Watch sermons, teachings, music, and uplifting messages.</p>
+            </div>
+            <div class="card-action">
+              <span class="btn-text" id="ytBtn">Subscribe Now</span>
+              <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
+            </div>
+          </a>
+
+          <!-- Instagram Card -->
+          <a href="https://www.instagram.com/sihambiedjabaar/" target="_blank" rel="noopener noreferrer" class="social-card instagram-card">
+            <div class="card-glass-bg"></div>
+            <div class="card-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">Instagram</h3>
+              <p class="card-desc" id="igDesc">View photo highlights, verse graphics, and daily inspirations.</p>
+            </div>
+            <div class="card-action">
+              <span class="btn-text" id="igBtn">Follow Us</span>
+              <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
+            </div>
+          </a>
+
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/201205111471" target="_blank" rel="noopener noreferrer" class="social-card whatsapp-card">
+            <div class="card-glass-bg"></div>
+            <div class="card-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title">WhatsApp</h3>
+              <p class="card-desc" id="waDesc">Connect with our ministry directly or join our update group.</p>
+            </div>
+            <div class="card-action">
+              <span class="btn-text" id="waBtn">Message Us</span>
+              <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Prayer Request / Google Form Section -->
+      <section class="prayer-section">
+        <div class="prayer-card">
+          <div class="prayer-glow"></div>
+          <div class="prayer-header">
+            <div class="prayer-icon-wrapper">
+              <i class="fa-solid fa-hands-praying"></i>
+            </div>
+            <h2 id="prayerTitle">Prayer Requests</h2>
+            <p id="prayerSubtext">Do you need prayer? Share your requests with us so we can stand together with you in faith.</p>
+          </div>
+
+          <div class="prayer-actions">
+            <!-- Google Form Link -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM0IjN1c3UA9LRUQuloCLFCI7jzfLJwHwnN5Za8N7HBZcE7w/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" id="prayerFormLink" class="prayer-btn primary-prayer-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span id="prayerFormBtnText">Submit Prayer Request (Google Form)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="./AHW.jpeg" alt="AHW Logo" class="footer-logo" />
+        <p class="footer-title">AHW - Ministry</p>
+        <p class="footer-blessing" id="footerBlessing">May the Lord bless you and keep you.</p>
+        <p class="footer-copy">&copy; <span id="yearSpan">2026</span> AHW - Ministry. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
 </html>
