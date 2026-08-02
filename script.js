@@ -8,12 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       langBtnText: "العربية",
-      ministryTitle: "AHW - Ministry",
-      ministryTagline: "Connecting Hearts through Faith, Fellowship & Prayer",
+      miniTitle: "Center El Awlad - Assiut",
+      locationTopText: "Center El Awlad - Assiut",
+      ministryTitle: "Center El Awlad Assiut",
+      ministryTagline: "AHW - Ministry | Connecting Hearts through Faith, Fellowship & Prayer",
       welcomeBadge: "Welcome to Our Official Social Hub",
       socialHeading: "Our Official Channels",
       socialSubtext: "Follow, subscribe, and stay updated with our latest spiritual content and announcements.",
       
+      mapTitle: "Google Maps Location",
+      mapDesc: "Visit us at Center El Awlad Assiut. Click for direct directions on Google Maps.",
+      mapBtn: "Open Map",
+
       fbDesc: "Join our Facebook community for daily posts & live streams.",
       fbBtn: "Follow Page",
       
@@ -35,11 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     ar: {
       langBtnText: "English",
-      ministryTitle: "خدمة AHW - Ministry",
-      ministryTagline: "نربط القلوب من خلال الإيمان والشركة والصلاة",
+      miniTitle: "سنتر الاولاد اسيوط",
+      locationTopText: "سنتر الاولاد اسيوط",
+      ministryTitle: "سنتر الاولاد اسيوط",
+      ministryTagline: "خدمة AHW - Ministry | نربط القلوب من خلال الإيمان والشركة والصلاة",
       welcomeBadge: "مرحباً بكم في المنصة الرسمية لخدمتنا",
       socialHeading: "قنواتنا الرسمية",
       socialSubtext: "تابعنا واشترك لتصلك أحدث التجميعات التعبدية، التأملات، والإعلانات.",
+
+      mapTitle: "موقعنا على الخريطة",
+      mapDesc: "زورونا في سنتر الأولاد أسيوط - اضغط للوصول المباشر عبر خرائط جوجل.",
+      mapBtn: "افتح الخريطة",
 
       fbDesc: "انضم إلى مجتمعنا على فيسبوك للمنشورات اليومية والبث المباشر.",
       fbBtn: "تابع الصفحة",
@@ -62,17 +74,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Current Language State (Default 'en', or retrieve from localStorage)
-  let currentLang = localStorage.getItem('ahw_lang') || 'en';
+  // Current Language State (Default 'ar', or retrieve from localStorage)
+  let currentLang = localStorage.getItem('ahw_lang') || 'ar';
 
   // DOM Elements
   const langToggleBtn = document.getElementById('langToggleBtn');
   const langBtnText = document.getElementById('langBtnText');
+  const miniTitle = document.getElementById('miniTitle');
+  const locationTopText = document.getElementById('locationTopText');
   const ministryTitle = document.getElementById('ministryTitle');
   const ministryTagline = document.getElementById('ministryTagline');
   const welcomeBadge = document.getElementById('welcomeBadge');
   const socialHeading = document.getElementById('socialHeading');
   const socialSubtext = document.getElementById('socialSubtext');
+
+  const mapTitle = document.getElementById('mapTitle');
+  const mapDesc = document.getElementById('mapDesc');
+  const mapBtn = document.getElementById('mapBtn');
 
   const fbDesc = document.getElementById('fbDesc');
   const fbBtn = document.getElementById('fbBtn');
@@ -107,6 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // UI Updates
     if (langBtnText) langBtnText.textContent = t.langBtnText;
+    if (miniTitle) miniTitle.textContent = t.miniTitle;
+    if (locationTopText) locationTopText.textContent = t.locationTopText;
     if (ministryTitle) ministryTitle.textContent = t.ministryTitle;
     if (ministryTagline) ministryTagline.textContent = t.ministryTagline;
     if (welcomeBadge) welcomeBadge.textContent = t.welcomeBadge;
@@ -121,6 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (socialSubtext) socialSubtext.textContent = t.socialSubtext;
 
+    if (mapTitle) mapTitle.textContent = t.mapTitle;
+    if (mapDesc) mapDesc.textContent = t.mapDesc;
+    if (mapBtn) mapBtn.textContent = t.mapBtn;
+
     if (fbDesc) fbDesc.textContent = t.fbDesc;
     if (fbBtn) fbBtn.textContent = t.fbBtn;
     if (ytDesc) ytDesc.textContent = t.ytDesc;
@@ -134,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (prayerSubtext) prayerSubtext.textContent = t.prayerSubtext;
     if (prayerFormBtnText) prayerFormBtnText.textContent = t.prayerFormBtnText;
     if (footerBlessing) footerBlessing.textContent = t.footerBlessing;
+    const footerCopy = document.getElementById('footerCopy');
+    if (footerCopy) footerCopy.textContent = t.footerCopy;
   }
 
   // Toggle Language Handler

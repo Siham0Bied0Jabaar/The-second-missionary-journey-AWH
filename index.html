@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AHW - Ministry | Connect & Prayer Portal</title>
+  <title>سنتر الاولاد اسيوط | خدمة AHW - Ministry</title>
   
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -30,13 +30,13 @@
       <div class="header-content">
         <div class="brand-mini">
           <img src="./AHW.jpeg" alt="AHW Ministry Logo" class="mini-logo" />
-          <span class="mini-title">AHW - Ministry</span>
+          <span class="mini-title" id="miniTitle">سنتر الاولاد اسيوط</span>
         </div>
         
         <!-- Language Switcher Button -->
         <button id="langToggleBtn" class="lang-btn" aria-label="Switch Language">
           <i class="fa-solid fa-globe"></i>
-          <span id="langBtnText">العربية</span>
+          <span id="langBtnText">English</span>
         </button>
       </div>
     </header>
@@ -46,17 +46,23 @@
       
       <!-- Hero Ministry Section -->
       <section class="hero-section">
+        <a href="https://maps.app.goo.gl/WuMmBEWJvK7neNbc6" target="_blank" rel="noopener noreferrer" class="location-top-badge" id="locationTopBadge" title="Open Google Maps Location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="locationTopText">سنتر الاولاد اسيوط</span>
+          <i class="fa-solid fa-arrow-up-right-from-square location-external-icon"></i>
+        </a>
+
         <div class="logo-container">
           <div class="logo-ring"></div>
           <img src="./AHW.jpeg" alt="AHW - Ministry Emblem" class="hero-logo" />
         </div>
 
-        <h1 class="ministry-title" id="ministryTitle">AHW - Ministry</h1>
-        <p class="ministry-tagline" id="ministryTagline">Connecting Hearts through Faith, Fellowship & Prayer</p>
+        <h1 class="ministry-title" id="ministryTitle">سنتر الاولاد اسيوط</h1>
+        <p class="ministry-tagline" id="ministryTagline">خدمة AHW - Ministry | نربط القلوب من خلال الإيمان والشركة والصلاة</p>
         
         <div class="badge-pill">
           <i class="fa-solid fa-heart"></i>
-          <span id="welcomeBadge">Welcome to Our Official Social Hub</span>
+          <span id="welcomeBadge">مرحباً بكم في المنصة الرسمية لخدمتنا</span>
         </div>
       </section>
 
@@ -64,12 +70,28 @@
       <section class="social-section">
         <h2 class="section-heading" id="socialHeading">
           <i class="fa-solid fa-share-nodes"></i>
-          <span>Our Official Channels</span>
+          <span>قنواتنا الرسمية</span>
         </h2>
-        <p class="section-subtext" id="socialSubtext">Follow, subscribe, and stay updated with our latest spiritual content and announcements.</p>
+        <p class="section-subtext" id="socialSubtext">تابعنا واشترك لتصلك أحدث التجميعات التعبدية، التأملات، والإعلانات.</p>
 
         <div class="social-grid">
           
+          <!-- Location / Google Maps Card -->
+          <a href="https://maps.app.goo.gl/WuMmBEWJvK7neNbc6" target="_blank" rel="noopener noreferrer" class="social-card location-card">
+            <div class="card-glass-bg"></div>
+            <div class="card-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="card-info">
+              <h3 class="card-title" id="mapTitle">موقعنا على الخريطة</h3>
+              <p class="card-desc" id="mapDesc">زورونا في سنتر الأولاد أسيوط - اضغط للوصول المباشر عبر خرائط جوجل.</p>
+            </div>
+            <div class="card-action">
+              <span class="btn-text" id="mapBtn">افتح الخريطة</span>
+              <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
+            </div>
+          </a>
+
           <!-- Facebook Card -->
           <a href="https://www.facebook.com/profile.php?id=61576910051160" target="_blank" rel="noopener noreferrer" class="social-card facebook-card">
             <div class="card-glass-bg"></div>
@@ -78,10 +100,10 @@
             </div>
             <div class="card-info">
               <h3 class="card-title">Facebook</h3>
-              <p class="card-desc" id="fbDesc">Join our Facebook community for daily posts & live streams.</p>
+              <p class="card-desc" id="fbDesc">انضم إلى مجتمعنا على فيسبوك للمنشورات اليومية والبث المباشر.</p>
             </div>
             <div class="card-action">
-              <span class="btn-text" id="fbBtn">Follow Page</span>
+              <span class="btn-text" id="fbBtn">تابع الصفحة</span>
               <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
             </div>
           </a>
@@ -94,10 +116,10 @@
             </div>
             <div class="card-info">
               <h3 class="card-title">YouTube</h3>
-              <p class="card-desc" id="ytDesc">Watch sermons, teachings, music, and uplifting messages.</p>
+              <p class="card-desc" id="ytDesc">شاهد العظات، التعاليم، الترنيم، والرسائل المشجعة.</p>
             </div>
             <div class="card-action">
-              <span class="btn-text" id="ytBtn">Subscribe Now</span>
+              <span class="btn-text" id="ytBtn">اشترك الآن</span>
               <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
             </div>
           </a>
@@ -110,10 +132,10 @@
             </div>
             <div class="card-info">
               <h3 class="card-title">Instagram</h3>
-              <p class="card-desc" id="igDesc">View photo highlights, verse graphics, and daily inspirations.</p>
+              <p class="card-desc" id="igDesc">استمتع بالصور التوضيحية، الآيات الكتابية، والتأملات اليومية.</p>
             </div>
             <div class="card-action">
-              <span class="btn-text" id="igBtn">Follow Us</span>
+              <span class="btn-text" id="igBtn">تابعنا</span>
               <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
             </div>
           </a>
@@ -126,10 +148,10 @@
             </div>
             <div class="card-info">
               <h3 class="card-title">WhatsApp</h3>
-              <p class="card-desc" id="waDesc">Connect with our ministry directly or join our update group.</p>
+              <p class="card-desc" id="waDesc">تواصل مع الخدمة مباشرةً أو انضم إلى مجموعة التحديثات.</p>
             </div>
             <div class="card-action">
-              <span class="btn-text" id="waBtn">Message Us</span>
+              <span class="btn-text" id="waBtn">تواصل معنا</span>
               <i class="fa-solid fa-arrow-up-right-from-square action-icon"></i>
             </div>
           </a>
@@ -145,15 +167,15 @@
             <div class="prayer-icon-wrapper">
               <i class="fa-solid fa-hands-praying"></i>
             </div>
-            <h2 id="prayerTitle">Prayer Requests</h2>
-            <p id="prayerSubtext">Do you need prayer? Share your requests with us so we can stand together with you in faith.</p>
+            <h2 id="prayerTitle">طلبات الصلاة</h2>
+            <p id="prayerSubtext">هل تحتاج إلى صلاة؟ شاركنا طلباتك لنقف معك في الإيمان والشفاعة.</p>
           </div>
 
           <div class="prayer-actions">
             <!-- Google Form Link -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM0IjN1c3UA9LRUQuloCLFCI7jzfLJwHwnN5Za8N7HBZcE7w/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" id="prayerFormLink" class="prayer-btn primary-prayer-btn">
               <i class="fa-solid fa-paper-plane"></i>
-              <span id="prayerFormBtnText">Submit Prayer Request (Google Form)</span>
+              <span id="prayerFormBtnText">أرسل طلب صلاة (نموذج جوجل)</span>
             </a>
           </div>
         </div>
@@ -165,9 +187,9 @@
     <footer class="footer">
       <div class="footer-content">
         <img src="./AHW.jpeg" alt="AHW Logo" class="footer-logo" />
-        <p class="footer-title">AHW - Ministry</p>
-        <p class="footer-blessing" id="footerBlessing">May the Lord bless you and keep you.</p>
-        <p class="footer-copy">&copy; <span id="yearSpan">2026</span> AHW - Ministry. All rights reserved.</p>
+        <p class="footer-title">سنتر الاولاد اسيوط | AHW - Ministry</p>
+        <p class="footer-blessing" id="footerBlessing">يباركك الرب ويحفظك.</p>
+        <p class="footer-copy">&copy; <span id="yearSpan">2026</span> <span id="footerCopy">خدمة AHW - Ministry. جميع الحقوق محفوظة.</span></p>
       </div>
     </footer>
 

@@ -251,6 +251,42 @@ html[dir="rtl"] .ministry-title {
   margin: 0 auto 1.5rem;
 }
 
+.location-top-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.location-top-badge:hover {
+  background: rgba(239, 68, 68, 0.22);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+}
+
+.location-external-icon {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  transition: var(--transition-fast);
+}
+
+.location-top-badge:hover .location-external-icon {
+  transform: translate(2px, -2px);
+  opacity: 1;
+}
+
 .badge-pill {
   display: inline-flex;
   align-items: center;
@@ -443,6 +479,23 @@ html[dir="rtl"] .social-card:hover .action-icon {
 
 .instagram-card:hover .card-icon {
   background: var(--ig-gradient);
+  color: #fff;
+}
+
+/* Location / Google Maps */
+.location-card .card-icon {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.location-card:hover {
+  border-color: #ef4444;
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.35);
+}
+
+.location-card:hover .card-icon {
+  background: #ef4444;
   color: #fff;
 }
 
