@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       langBtnText: "العربية",
-      miniTitle: "Center El Awlad - Assiut",
-      locationTopText: "Center El Awlad - Assiut",
-      ministryTitle: "Center El Awlad Assiut",
+      miniTitle: "El Takween Hotel - Abu Qurqas",
+      locationTopText: "El Takween Hotel - Abu Qurqas",
+      ministryTitle: "El Takween Hotel - Abu Qurqas",
       ministryTagline: "AHW - Ministry | Connecting Hearts through Faith, Fellowship & Prayer",
       welcomeBadge: "Welcome to Our Official Social Hub",
       socialHeading: "Our Official Channels",
       socialSubtext: "Follow, subscribe, and stay updated with our latest spiritual content and announcements.",
       
       mapTitle: "Google Maps Location",
-      mapDesc: "Visit us at Center El Awlad Assiut. Click for direct directions on Google Maps.",
+      mapDesc: "Visit us at El Takween Hotel in Abu Qurqas - Click for direct directions on Google Maps.",
       mapBtn: "Open Map",
 
       fbDesc: "Join our Facebook community for daily posts & live streams.",
@@ -41,16 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     ar: {
       langBtnText: "English",
-      miniTitle: "سنتر الاولاد اسيوط",
-      locationTopText: "سنتر الاولاد اسيوط",
-      ministryTitle: "سنتر الاولاد اسيوط",
+      miniTitle: "فندق التكوين في ابو قرقاص",
+      locationTopText: "فندق التكوين في ابو قرقاص",
+      ministryTitle: "فندق التكوين في ابو قرقاص",
       ministryTagline: "خدمة AHW - Ministry | نربط القلوب من خلال الإيمان والشركة والصلاة",
       welcomeBadge: "مرحباً بكم في المنصة الرسمية لخدمتنا",
       socialHeading: "قنواتنا الرسمية",
       socialSubtext: "تابعنا واشترك لتصلك أحدث التجميعات التعبدية، التأملات، والإعلانات.",
 
       mapTitle: "موقعنا على الخريطة",
-      mapDesc: "زورونا في سنتر الأولاد أسيوط - اضغط للوصول المباشر عبر خرائط جوجل.",
+      mapDesc: "زورونا في فندق التكوين في ابو قرقاص - اضغط للوصول المباشر عبر خرائط جوجل.",
       mapBtn: "افتح الخريطة",
 
       fbDesc: "انضم إلى مجتمعنا على فيسبوك للمنشورات اليومية والبث المباشر.",
